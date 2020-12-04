@@ -1,10 +1,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @extends('layouts.header')
-
-
-
+@section('title', 'Ads')
 @section('content')
-
 
 <div class=" flex items-center justify-center h-screen">
     <div class="container">
@@ -47,7 +44,5 @@
       </div>
     </div>
   </div>
-
-
 
 @endsection

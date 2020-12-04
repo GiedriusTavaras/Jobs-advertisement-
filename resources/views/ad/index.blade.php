@@ -1,17 +1,10 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+@section('title', 'Ads')
 @extends('layouts.header')
-
-
-
 @section('content')
 
-
-
-
-
-
+{{-- search by title --}}
 <div class="flex items-center justify-center w-full ">
-    
 	<div class=" w-6/12	 ">
 		<form action="{{ route('ad.search') }}" method="GET">
       <div class="w-full h-10 pl-3 mt-4 pr-2 bg-white border rounded-full flex justify-between items-center relative">
@@ -24,37 +17,14 @@
           </svg>
         </button>
       </div>
-      </form>
-	</div>
-	
+    </form>
   </div>
-
-
-{{-- <form action="{{ route('ad.search') }}" method="GET">
-<div class="w-full h-10 pl-3 pr-2 bg-white border rounded-full flex justify-between items-center relative">
-  <input type="text" name="search" id="search" placeholder="Search for job title"
-         class="appearance-none w-full outline-none focus:outline-none active:outline-none"/>
-  <button type="submit" class="ml-1 outline-none focus:outline-none active:outline-none">
-    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-         viewBox="0 0 24 24" class="w-6 h-6">
-      <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-    </svg>
-  </button>
 </div>
-</form> --}}
-  
-{{-- <form action="{{ route('ad.search') }}" method="GET">
-  <td>
-    <input type="text" name="search" required/>
-  </td>
-  <td>
-    <button type="submit">Search</button>
-  </td>
-</form> --}}
 
 
+{{-- filtration --}}
 <form action="{{route('ad.index')}}" method="get">
-  <div class="md:px-32 py-8 w-full">
+  <div class="md:px-32 py-4 w-full">
     <div class="break-words overflow-x-auto shadow overflow-hidden rounded border-b border-gray-200">
       <table class="min-w-full bg-white">
         <tbody class="text-gray-700">
@@ -76,12 +46,12 @@
       </table>
     </div>
   </div>
-  </form>
+</form>
 
 
 
-
-<div class="md:px-32 py-8 w-full">
+{{-- main table --}}
+<div class="md:px-32 py-4 w-full">
   <div class="break-words overflow-x-auto shadow overflow-hidden rounded border-b border-gray-200">
     <table class="min-w-full bg-white">
       <thead class="bg-gray-800 text-white">

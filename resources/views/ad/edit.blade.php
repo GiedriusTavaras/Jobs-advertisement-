@@ -1,29 +1,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @extends('layouts.header') 
+@section('title', 'Edit ad')
 @section('content')
-
-{{-- <form method="PUT" action="{{route('ad.update',[$ad])}}">
-    Title: <input type="text" name="ad_title" value="{{$ad->title}}">
-    Description: <textarea name="ad_description">{{$ad->description}}"</textarea>
-    Salary: <input type="text" name="ad_salary" value="{{$ad->salary}}">
-    area1: <input type="text" name="ad_area1" value="{{$ad->area1}}">
-    area2: <input type="text" name="ad_area2" value="{{$ad->area2}}">
-    area3: <input type="text" name="ad_area3" value="{{$ad->area3}}">
-    area4: <input type="text" name="ad_area4" value="{{$ad->area4}}">
-    area5: <input type="text" name="ad_area5" value="{{$ad->area5}}">
-    <select name="language_id">
-        @foreach ($languages as $language)
-            <option value="{{$language->id}}" @if($language->id == $ad->language_id) selected @endif>
-                {{$language->language}} 
-            </option>
-        @endforeach
-</select>
-    <input type="hidden" name="_method" value="PUT">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-    @csrf
-    <button type="submit">EDIT</button>
-</form> --}}
-
 
 
 <form method="POST" action="{{route('ad.update',[$ad])}}">

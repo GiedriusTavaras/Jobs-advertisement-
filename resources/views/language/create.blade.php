@@ -1,16 +1,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @extends('layouts.header') 
+@section('title', 'Create language')
 @section('content')
-
-
-{{-- <form method="POST" action="{{route('language.store')}}">
-    Language: <input type="text" name="language_language">
-    @csrf
-    <button type="submit">ADD</button>
- </form> --}}
- 
- {{-- @endsection  --}}
-
 
  <form method="POST" action="{{route('language.store')}}">
     <div class="mx-4 mt-4 shadow-lg card bg-white max-w-xl p-6 md:rounded-lg mx-auto">

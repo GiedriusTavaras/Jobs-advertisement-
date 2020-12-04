@@ -1,27 +1,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @extends('layouts.header') 
+@section('title', 'Create ad')
 @section('content')
-
-{{-- <form method="POST" action="{{route('ad.store')}}">
-    Title: <input type="text" name="ad_title">
-    Description: <textarea name="ad_description"></textarea>
-    Salary: <input type="text" name="ad_salary">
-    area1: <input type="text" name="ad_area1">
-    area2: <input type="text" name="ad_area2">
-    area3: <input type="text" name="ad_area3">
-    area4: <input type="text" name="ad_area4">
-    area5: <input type="text" name="ad_area5">
-    <select name="language_id">
-        @foreach ($languages as $language)
-            <option value="{{$language->id}}">{{$language->language}}</option>
-        @endforeach
- </select>
-    @csrf
-    <button type="submit">ADD</button>
- </form> --}}
- 
-
-
 
 
  <form method="POST" action="{{route('ad.store')}}">

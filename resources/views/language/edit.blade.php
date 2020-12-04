@@ -1,18 +1,10 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @extends('layouts.header') 
+@section('title', 'Edit language')
 @section('content')
 
-{{-- <form method="POST" action="{{route('language.update',[$language->id])}}">
-    Language: <input type="text" name="language_language" value="{{$language->language}}">
-    <input type="hidden" name="_method" value="PUT">
-    <input type="hidden" name="_token" value="{{ csrf_token() }}">
-    @csrf
-    <button type="submit">EDIT</button>
- </form> --}}
 
-
- 
- <form method="POST" action="{{route('language.update',[$language->id])}}">
+<form method="POST" action="{{route('language.update',[$language->id])}}">
     <div class="mx-3 mt-3 shadow-lg card bg-white max-w-xl p-6 md:rounded-lg mx-auto">
         <div class="title">
             <h1 class="font-bold text-center">Update Language</h1>

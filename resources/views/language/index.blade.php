@@ -1,19 +1,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-@extends('layouts.header') 
+@extends('layouts.header')
+@section('title', 'Languages') 
 @section('content')
-
-{{-- @foreach ($languages as $language)
-    <a href="{{route('language.edit',[$language])}}">{{$language->language}}</a><br>
-  <form method="POST" action="{{route('language.destroy', [$language])}}">
-   @csrf
-   <button type="submit">DELETE</button>
-  </form>
-  <br>
-@endforeach --}}
-
-
-
-
 
 <div class="md:px-32 py-8 w-full">
   <div class="shadow overflow-hidden rounded border-b border-gray-200">

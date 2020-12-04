@@ -1,26 +1,7 @@
-
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @extends('layouts.header')
-
-
-
+@section('title', 'Ads')
 @section('content')
-
-{{-- @if($ads->isNotEmpty())
-    @foreach ($ads as $ad)
-        <div class="ad-list">
-            <p>{{ $ad->title }}</p>
-        </div>
-    @endforeach
-@else 
-<td class="shadow text-left py-3 px-4"><a href="{{ route('ad.index', [$ad]) }}"><button
-    class="shadow-md w-full bg-blue-600 shadow-lg text-white px-3 py-2 hover:bg-blue-700 mt-8 text-center font-semibold focus:outline-none ">Back</button></a>
-</td>
-@endif --}}
-
-
-
-
 
 @if($ads->isNotEmpty())
 @foreach ($ads as $ad)
@@ -83,6 +64,6 @@
       </div>
     </div>
   </div>
-  @endif
+@endif
 
-  @endsection
+@endsection
